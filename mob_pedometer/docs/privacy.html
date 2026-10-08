@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — Шагомер / Privacy Policy — Pedometer</title>
+<meta name="description" content="Политика конфиденциальности приложения «Шагомер»: данные о шагах хранятся только на устройстве, сервера нет.">
+<script>
+  try {
+    var l = localStorage.getItem('privacy-lang');
+    if (l === 'en' || l === 'ru') { document.documentElement.lang = l; }
+  } catch (e) {}
+</script>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --fg: #1b1e23;
+    --muted: #5b6470;
+    --card: #ffffff;
+    --line: #e2e5ea;
+    --brand: #5686fe;
+    --accent: #0f62d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #e8eaed;
+      --muted: #9aa3af;
+      --card: #1c1f24;
+      --line: #2b2f36;
+      --brand: #5686fe;
+      --accent: #8fb2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 21px; line-height: 1.3; margin: 40px 0 12px; }
+  h3 { font-size: 17px; margin: 26px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .sub { color: var(--muted); font-size: 14px; margin: 0; }
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  button.lang {
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 16px;
+    cursor: pointer;
+  }
+  button.lang:hover { border-color: var(--brand); }
+  button.lang:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+  .toc {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 4px 20px 12px;
+    margin: 20px 0 0;
+  }
+  .toc ol { margin: 8px 0 0; columns: 2; column-gap: 28px; }
+  .toc li { break-inside: avoid; margin-bottom: 4px; font-size: 15px; }
+  .lead {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--brand);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 24px 0;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 4px 20px 12px;
+    margin: 16px 0;
+    overflow-x: auto;
+  }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+  tr:last-child td { border-bottom: 0; }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; }
+  code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 13.5px; }
+  .note { color: var(--muted); font-size: 14px; }
+  footer {
+    margin-top: 48px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  [data-l="ru"] { display: none; }
+  html[lang="ru"] [data-l="en"] { display: none; }
+  html[lang="ru"] [data-l="ru"] { display: revert; }
+  @media (max-width: 620px) { .toc ol { columns: 1; } body { padding: 24px 16px 56px; } }
+  @media print { .toolbar { display: none; } body { background: #fff; padding: 0; } }
+</style>
+</head>
+<body>
+<main>
+
+<div class="toolbar">
+  <p class="sub"><span data-l="ru">Обновлено 8 октября 2026 г.</span><span data-l="en">Last updated: 8 October 2026</span></p>
+  <button class="lang" id="langToggle" type="button">English</button>
+</div>
+
+<header>
+  <h1><span data-l="ru">Политика конфиденциальности</span><span data-l="en">Privacy Policy</span></h1>
+  <p class="sub">
+    <span data-l="ru">Приложение «Шагомер» для Android · <code>com.vbarkasov.mob_pedometer</code></span>
+    <span data-l="en">«Pedometer» for Android · <code>com.vbarkasov.mob_pedometer</code></span>
+  </p>
+</header>
+
+<div class="toc">
+  <ol>
+    <li><a href="#general"><span data-l="ru">Общие положения</span><span data-l="en">General</span></a></li>
+    <li><a href="#local"><span data-l="ru">Данные, которые хранит приложение</span><span data-l="en">Data stored by the app</span></a></li>
+    <li><a href="#health"><span data-l="ru">Health Connect</span><span data-l="en">Health Connect</span></a></li>
+    <li><a href="#ads"><span data-l="ru">Реклама и передача данных в сеть</span><span data-l="en">Advertising and data sent over the network</span></a></li>
+    <li><a href="#permissions"><span data-l="ru">Разрешения и зачем они нужны</span><span data-l="en">Permissions and why they are used</span></a></li>
+    <li><a href="#sharing"><span data-l="ru">Кому передаются данные</span><span data-l="en">Who receives your data</span></a></li>
+    <li><a href="#retention"><span data-l="ru">Хранение и удаление</span><span data-l="en">Retention and deletion</span></a></li>
+    <li><a href="#rights"><span data-l="ru">Ваши права</span><span data-l="en">Your rights</span></a></li>
+    <li><a href="#security"><span data-l="ru">Безопасность</span><span data-l="en">Security</span></a></li>
+    <li><a href="#children"><span data-l="ru">Дети</span><span data-l="en">Children</span></a></li>
+    <li><a href="#changes"><span data-l="ru">Изменения политики</span><span data-l="en">Changes to this policy</span></a></li>
+    <li><a href="#contacts"><span data-l="ru">Контакты</span><span data-l="en">Contact</span></a></li>
+  </ol>
+</div>
+
+<h2 id="general">
+  <span data-l="ru">1. Общие положения</span><span data-l="en">1. General</span>
+</h2>
+
+<p data-l="ru">Настоящая Политика описывает, какие данные собирает мобильное приложение «Шагомер» (далее — Приложение), как они используются и кто имеет к ним доступ.</p>
+<p data-l="en">This Policy describes what data the mobile app "Pedometer" (the "App") collects, how that data is used, and who can access it.</p>
+
+<p data-l="ru">Разработчик Приложения: Константин Петров (VBsoft), г. Новосибирск, Россия. Приложение распространяется через Google Play и работает <strong>полностью на устройстве</strong>: у него нет сервера, аккаунтов и регистрации.</p>
+<p data-l="en">Developer of the App: Konstantin Petrov (VBsoft), Novosibirsk, Russia. The App is distributed through Google Play and works <strong>entirely on the device</strong>: it has no server, no accounts and no registration.</p>
+
+<div class="lead">
+  <p data-l="ru"><strong>Главное в одном абзаце.</strong> Счёт шагов, история за дни, рост, вес и любые другие данные о здоровье остаются только на вашем телефоне. Мы их не получаем, не храним на своей стороне и никуда не отправляем. Единственное, что уходит в сеть, — технические данные показа рекламного баннера, которые собирает рекламный SDK (раздел 4).</p>
+  <p data-l="en"><strong>The short version.</strong> Your step count, day-by-day history, height, weight and any other health data stay on your phone. We never receive them, store them on our side, or send them anywhere. The only thing that leaves the device is the technical data required to display the advertising banner, collected by the advertising SDK (section 4).</p>
+</div>
+
+<h2 id="local">
+  <span data-l="ru">2. Данные, которые хранит приложение</span><span data-l="en">2. Data stored by the app</span>
+</h2>
+
+<p data-l="ru">Всё перечисленное ниже записывается в локальную базу SQLite на вашем устройстве и никуда не отправляется:</p>
+<p data-l="en">Everything listed below is written to a local SQLite database on your device and is never uploaded anywhere:</p>
+
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th><span data-l="ru">Данные</span><span data-l="en">Data</span></th>
+        <th><span data-l="ru">Где хранится</span><span data-l="en">Where it is stored</span></th>
+        <th><span data-l="ru">Зачем</span><span data-l="en">Why</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span data-l="ru">Количество шагов за день, история по дням</span><span data-l="en">Daily step count and day-by-day history</span></td>
+        <td><code>daily_summary</code></td>
+        <td><span data-l="ru">Показ счётчика, графика и статистики</span><span data-l="en">Counter, chart and statistics screens</span></td>
+      </tr>
+      <tr>
+        <td><span data-l="ru">Профиль: пол, рост, вес, длина шага</span><span data-l="en">Profile: gender, height, weight, step length</span></td>
+        <td><code>settings → profile</code></td>
+        <td><span data-l="ru">Расчёт дистанции и калорий. Поля необязательные</span><span data-l="en">Distance and calorie calculation. All fields optional</span></td>
+      </tr>
+      <tr>
+        <td><span data-l="ru">Цель по шагам, единицы измерения, язык, тема оформления</span><span data-l="en">Step goal, unit system, language, theme</span></td>
+        <td><code>settings</code></td>
+        <td><span data-l="ru">Настройки Приложения</span><span data-l="en">App settings</span></td>
+      </tr>
+      <tr>
+        <td><span data-l="ru">Напоминания: время и дни недели</span><span data-l="en">Reminders: time and weekdays</span></td>
+        <td><code>reminders</code></td>
+        <td><span data-l="ru">Локальные уведомления на вашем телефоне</span><span data-l="en">Local notifications on your phone</span></td>
+      </tr>
+      <tr>
+        <td><span data-l="ru">Служебные флаги: включён ли фоновый подсчёт, синхронизация, отметка о достигнутой цели, скрыта ли подсказка о батарее, последнее значение датчика</span><span data-l="en">Internal flags: background counting on/off, sync on/off, goal-achieved marker, battery hint dismissed, last raw sensor reading</span></td>
+        <td><code>settings</code></td>
+        <td><span data-l="ru">Чтобы Приложение работало правильно и переживало перезапуск</span><span data-l="en">So the App behaves correctly and survives a restart</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p data-l="ru">Обратите внимание: счётчик шагов на Android возвращает <em>общее</em> число шагов с момента загрузки телефона. Чтобы показать число за сегодня, Приложение запоминает последнее увиденное значение. Это техническое значение никуда не отправляется.</p>
+<p data-l="en">Note: on Android the step sensor returns the <em>cumulative</em> step count since the device was last rebooted. To show today's number the App remembers the last value it has seen. This technical value is never uploaded.</p>
+
+<h2 id="health">
+  <span data-l="ru">3. Health Connect</span><span data-l="en">3. Health Connect</span>
+</h2>
+
+<p data-l="ru">Сведения о количестве шагов относятся к <strong>данным о здоровье</strong>. Приложение может по вашему выбору:</p>
+<p data-l="en">Step count is <strong>health data</strong>. At your choice the App can:</p>
+
+<ul>
+  <li data-l="ru"><strong>читать</strong> из Health Connect сводку шагов за дни, которых ещё нет в базе Приложения, — чтобы восстановить историю до установки Приложения;</li>
+  <li data-l="ru"><strong>записывать</strong> в Health Connect закрытые дни, чтобы другие приложения и Google Health видели те же числа.</li>
+  <li data-l="en"><strong>read</strong> from Health Connect the step totals for days that are not yet in the App's database, restoring history from before installation;</li>
+  <li data-l="en"><strong>write</strong> closed days into Health Connect, so other apps and Google Health show the same numbers.</li>
+</ul>
+
+<div class="lead">
+  <p data-l="ru"><strong>Это выключено по умолчанию.</strong> Синхронизация начинает работать только после того, как вы сами включите тумблер в настройках и выдадите Приложению разрешения <code>health.READ_STEPS</code> и <code>health.WRITE_STEPS</code>. Отзыв разрешений в системе Health Connect немедленно прекращает любой доступ — и Приложение больше ничего не читает и не записывает.</p>
+  <p data-l="en"><strong>This is off by default.</strong> Sync only starts after you turn on the switch in Settings and grant the App the <code>health.READ_STEPS</code> and <code>health.WRITE_STEPS</code> permissions. Revoking the permissions in Health Connect stops all access immediately — the App then neither reads nor writes anything.</p>
+</div>
+
+<p data-l="ru">Что именно происходит при синхронизации:</p>
+<p data-l="en">What sync actually does:</p>
+
+<ul>
+  <li data-l="ru">обмениваются <strong>только</strong> количеством шагов по календарным дням (окно — последние 30 дней); ни рост, ни вес, ни пол в Health Connect не попадают;</li>
+  <li data-l="ru">приложение обращается к Google только к системному компоненту Health Connect, который <em>сам</em> отвечает за передачу данных между приложениями и учётной записью Google; Приложение не запрашивает у Google аккаунт, не читает его и не использует другие сервисы Google;</li>
+  <li data-l="ru">в фоне синхронизация запускается не чаще одного раза в 6 часов (только если тумблер включён), вручную — по кнопке в настройках;</li>
+  <li data-l="ru">приложение не читает Health Connect и не пишет в него ничего, кроме числа шагов: никаких пульса, сна, питания, географии или идентификаторов пользователя.</li>
+  <li data-l="en">only <strong>daily step counts</strong> are exchanged (a 30-day window); height, weight and gender never enter Health Connect;</li>
+  <li data-l="en">the App talks only to the system Health Connect component, which <em>itself</em> handles data exchange between apps and your Google account; the App never asks Google for an account, never reads it and uses no other Google services;</li>
+  <li data-l="en">in the background sync runs no more than once every 6 hours (only if the switch is on); you can trigger it manually from Settings;</li>
+  <li data-l="en">the App neither reads nor writes anything except step counts: no heart rate, sleep, nutrition, location or user identifiers.</li>
+</ul>
+
+<p class="note" data-l="ru">Если на телефоне нет аппаратного сенсора шагов (такое бывает у части моделей), единственный способ получить историю — импорт из Health Connect. Поэтому у Приложения в манифесте нет требования <code>android.hardware.sensor.stepcounter</code> как обязательного.</p>
+<p class="note" data-l="en">If the phone has no hardware step sensor (true for some models), importing from Health Connect is the only way to get history. That is why the App does not declare <code>android.hardware.sensor.stepcounter</code> as required.</p>
+
+<h2 id="ads">
+  <span data-l="ru">4. Реклама и передача данных в сеть</span><span data-l="en">4. Advertising and data sent over the network</span>
+</h2>
+
+<p data-l="ru">В нижней части экранов размещается баннер рекламы. Показ рекламы обеспечивает SDK <strong>Яндекс.Мобильной рекламы</strong> (идентификатор приложения 20151070, рекламный блок <code>R-M-20151070-1</code>). Реклама помогает поддерживать разработку Приложения.</p>
+<p data-l="en">A banner ad is placed at the bottom of the screens. Ads are served by the <strong>Yandex Mobile Ads</strong> SDK (App ID 20151070, ad unit <code>R-M-20151070-1</code>). Advertising helps fund the development of the App.</p>
+
+<p data-l="ru">Это единственная часть Приложения, которая обращается к сети. Когда вы видите баннер, рекламный SDK передаёт своему сервису <strong>технические</strong> сведения о показе:</p>
+<p data-l="en">This is the only part of the App that uses the network. When a banner is shown, the advertising SDK sends the following <strong>technical</strong> information to its own service:</p>
+
+<ul>
+  <li data-l="ru">идентификатор рекламы в Google Play (<code>com.google.android.gms.permission.AD_ID</code>) и рекламный идентификатор Яндекса;</li>
+  <li data-l="ru">IP-адрес устройства;</li>
+  <li data-l="ru">сведения об устройстве и Приложении: модель, производитель, версия Android, версия Приложения, разрешения, язык, ориентация экрана;</li>
+  <li data-l="ru">данные о взаимодействии с рекламой: показы, клики, время и место показа.</li>
+  <li data-l="en">the Google Play advertising ID (<code>com.google.android.gms.permission.AD_ID</code>) and the Yandex advertising identifier;</li>
+  <li data-l="en">the device IP address;</li>
+  <li data-l="en">device and app details: model, manufacturer, Android version, app version, permissions, language, screen orientation;</li>
+  <li data-l="en">ad interaction data: impressions, clicks, time and context of the impression.</li>
+</ul>
+
+<div class="lead">
+  <p data-l="ru"><strong>Чего в рекламу не попадает.</strong> Ни шаги, ни рост, ни вес, ни пол, ни история дневников не передаются рекламному SDK и рекламным сетям. Данные о здоровье не используются для таргетинга рекламы и не продаются. Наша задача — не допустить утечки шагов через рекламные каналы, и мы проверяем это по коду и по фактическим разрешениям.</p>
+  <p data-l="en"><strong>What never reaches the ads.</strong> Steps, height, weight, gender and your day-by-day history are not passed to the advertising SDK or to ad networks. Health data is not used for ad targeting and is not sold. Keeping step data out of the ad channel is our job, and we verify it against the code and the actual permissions.</p>
+</div>
+
+<p data-l="ru">Рекламный SDK Яндекса включает собственную аналитику (AppMetrica) и работает как самостоятельный сервис: он выбирает объявление, определяет его цену и ведёт свою статистику. Дальнейшая обработка этих технических данных — на стороне Яндекса и его партнёров, поэтому мы приводим ссылку на их политику:</p>
+<p data-l="en">The Yandex advertising SDK bundles its own analytics component (AppMetrica) and acts as an independent service: it selects the ad, prices it and keeps its own statistics. Any further processing of that technical data is done by Yandex and its partners, so we link to their policy:</p>
+
+<ul>
+  <li><a href="https://yandex.ru/legal/privacy_appmetrica/" rel="noopener noreferrer" target="_blank">Яндекс — политика конфиденциальности AppMetrica</a></li>
+  <li><a href="https://yandex.ru/legal/privacy_ads/" rel="noopener noreferrer" target="_blank">Яндекс — политика в отношении рекламных данных</a></li>
+</ul>
+
+<p data-l="ru">Если вы не хотите показ рекламы, установите для этого приложения лимит данных или запретите ему доступ в сеть в настройках Android («Трафик данных» / «Использование трафика», а для тяжёлых — «Не раздавать и не скачивать»). Рекламный SDK без сети не показывает объявления, а счётчик шагов, фоновый подсчёт, напоминания и локальная работа с Health Connect продолжают работать. Отдельно можно сбросить или удалить рекламный идентификатор в настройках Google Play. Отдельного тумблера «без рекламы» внутри Приложения нет: сборка, которая ставится в Google Play, показывает рекламу всегда, когда её запрашивает сеть.</p>
+<p data-l="en">If you would rather not see ads, set a data limit for this app or block its network access in Android settings (“Data usage” / “App data”, and “Restrict background data” for heavy users). The advertising SDK shows nothing without network access, while step counting, background counting, reminders and local Health Connect work keep running. You can also reset or delete the advertising ID in Google Play settings. There is no “ads off” switch inside the App: the build published on Google Play always shows ads when it can reach the network.</p>
+
+<h2 id="permissions">
+  <span data-l="ru">5. Разрешения и зачем они нужны</span><span data-l="en">5. Permissions and why they are used</span>
+</h2>
+
+<p data-l="ru">Android требует явного согласия на каждое разрешение. Ни одно из них не даёт доступа к содержимому других приложений, контактам, переписке, местоположению, камере или микрофону.</p>
+<p data-l="en">Android requires explicit consent for each permission. None of them grants access to other apps' content, contacts, messages, location, camera or microphone.</p>
+
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th><span data-l="ru">Разрешение</span><span data-l="en">Permission</span></th>
+        <th><span data-l="ru">Зачем нужно</span><span data-l="en">Why it is needed</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>ACTIVITY_RECOGNITION</code></td>
+        <td><span data-l="ru">Чтение датчика шагов. Запрашивается по кнопке, а не при первом запуске</span><span data-l="en">Reading the step sensor. Requested by a button, not on first launch</span></td>
+      </tr>
+      <tr>
+        <td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_HEALTH</code></td>
+        <td><span data-l="ru">Фоновый подсчёт шагов, когда экран закрыт</span><span data-l="en">Background step counting while the screen is off</span></td>
+      </tr>
+      <tr>
+        <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+        <td><span data-l="ru">Восстановление напоминаний и фонового подсчёта после перезагрузки телефона</span><span data-l="en">Restoring reminders and background counting after a reboot</span></td>
+      </tr>
+      <tr>
+        <td><code>POST_NOTIFICATIONS</code></td>
+        <td><span data-l="ru">Уведомление со счётчиком и напоминания о шагах</span><span data-l="en">The ongoing counter notification and step reminders</span></td>
+      </tr>
+      <tr>
+        <td><code>SCHEDULE_EXACT_ALARM</code></td>
+        <td><span data-l="ru">Напоминание срабатывает в выбранное вами время, а не позже на час</span><span data-l="en">Reminders fire at the exact time you picked, not up to an hour later</span></td>
+      </tr>
+      <tr>
+        <td><code>VIBRATE</code></td>
+        <td><span data-l="ru">Тактильный отклик на срабатывание напоминания</span><span data-l="en">Haptic feedback when a reminder fires</span></td>
+      </tr>
+      <tr>
+        <td><code>health.READ_STEPS</code>, <code>health.WRITE_STEPS</code></td>
+        <td><span data-l="ru">Синхронизация шагов с Health Connect. Только по вашему выбору</span><span data-l="en">Step sync with Health Connect. Only at your choice</span></td>
+      </tr>
+      <tr>
+        <td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>AD_ID</code></td>
+        <td><span data-l="ru">Только рекламный баннер. Данные о шагах и профиль в сеть не передаются</span><span data-l="en">The ad banner only. Step and profile data are never uploaded</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="sharing">
+  <span data-l="ru">6. Кому передаются данные</span><span data-l="en">6. Who receives your data</span>
+</h2>
+
+<p data-l="ru">Мы <strong>не продаём</strong> и не сдаём в аренду персональные данные и не передаём их для целевой рекламы. У нас нет собственного сервера, поэтому мы физически не можем получить ваши шаги или профиль.</p>
+<p data-l="en">We do <strong>not sell</strong> or rent personal data and do not share it for targeted advertising. We have no server of our own, so we are technically unable to receive your steps or profile.</p>
+
+<p data-l="ru">Полный список получателей данных при использовании Приложения:</p>
+<p data-l="en">The complete list of recipients when you use the App:</p>
+
+<ul>
+  <li data-l="ru"><strong>Яндекс.Мобильная реклама (AppMetrica)</strong> — технические данные о показе баннера (раздел 4). Обрабатываются на серверах Яндекса, в том числе за пределами вашей страны.</li>
+  <li data-l="ru"><strong>Google Play и Health Connect</strong> — передача разрешений на показ и импорт/экспорт шагов выполняется <strong>только системными компонентами Android</strong>. Наш сервис при этом ничего не получает.</li>
+  <li data-l="ru"><strong>Google Play services</strong> — идентификатор рекламы читается рекламным SDK с вашего согласия.</li>
+  <li data-l="ru"><strong>Веб-сайты в веб-версии рекламы</strong> — реклама может содержать ссылку, по которой вы перейдёте на сторонний сайт; его правила обработки данных действуют отдельно.</li>
+  <li data-l="ru"><strong>Никто и нигде больше.</strong> Мы не продаём аналитику, не отправляем телеметрию и не запрашиваем сведения об устройстве в собственных целях.</li>
+  <li data-l="en"><strong>Yandex Mobile Ads (AppMetrica)</strong> — technical data about ad impressions (section 4). Processed on Yandex servers, possibly outside your country.</li>
+  <li data-l="en"><strong>Google Play and Health Connect</strong> — permission prompts and step import/export are performed <strong>by Android system components only</strong>. Our service receives nothing.</li>
+  <li data-l="en"><strong>Google Play services</strong> — the advertising ID is read by the ads SDK with your consent.</li>
+  <li data-l="en"><strong>Websites in web ads</strong> — an ad may contain a link to a third-party site, whose own privacy rules apply once you open it.</li>
+  <li data-l="en"><strong>Nobody else, anywhere.</strong> We do not sell analytics, send telemetry, or query device information for our own purposes.</li>
+</ul>
+
+<h2 id="retention">
+  <span data-l="ru">7. Хранение и удаление</span><span data-l="en">7. Retention and deletion</span>
+</h2>
+
+<ul>
+  <li data-l="ru">Данные о шагах и настройках хранятся на устройстве, пока Приложение установлено, и удаляются при удалении Приложения или очистке его данных в системных настройках Android.</li>
+  <li data-l="ru">Чтобы удалить всё досрочно, удалите Приложение: база SQLite находится во внутреннем хранилище Приложения и удаляется вместе с ним.</li>
+  <li data-l="ru">Записи, которые Приложение записало в Health Connect, остаются там после удаления Приложения — их нужно удалить вручную в Health Connect.</li>
+  <li data-l="ru">Мы не храним копий ваших данных, поэтому запрос на удаление на нашей стороне сводится к удалению Приложения.</li>
+  <li data-l="en">Step and settings data lives on the device while the App is installed and is deleted when you uninstall it or clear its storage in Android settings.</li>
+  <li data-l="en">To delete everything earlier, uninstall the App: its SQLite database lives inside the app's private storage and goes away with it.</li>
+  <li data-l="en">Records the App wrote into Health Connect stay there after uninstall — remove them manually in Health Connect.</li>
+  <li data-l="en">We keep no copies of your data, so a deletion request on our side is satisfied by uninstalling the App.</li>
+</ul>
+
+<h2 id="rights">
+  <span data-l="ru">8. Ваши права</span><span data-l="en">8. Your rights</span>
+</h2>
+
+<p data-l="ru">Если вы находитесь в России, Европейском союзе, Великобритании или другой стране с законодательством о защите персональных данных, вы имеете право:</p>
+<p data-l="en">If you are in Russia, the European Union, the UK, or another country with personal data protection law, you have the right to:</p>
+
+<ul>
+  <li data-l="ru">получить сведения об обработке ваших персональных данных и их носителях;</li>
+  <li data-l="ru">требовать уточнения, блокирования или уничтожения данных, если они неполны, устарели, неточны или получены незаконно;</li>
+  <li data-l="ru">отозвать согласие на обработку данных, в том числе на доступ к Health Connect;</li>
+  <li data-l="ru">обжаловать действия разработчика в Роскомнадзоре или в суде;</li>
+  <li data-l="ru">возразить против обработки и потребовать её прекращения.</li>
+  <li data-l="en">be informed about how your personal data is processed and where;</li>
+  <li data-l="en">ask for inaccurate, incomplete or unlawfully obtained data to be corrected, blocked or destroyed;</li>
+  <li data-l="en">withdraw consent for processing, including for Health Connect access;</li>
+  <li data-l="en">complain about the developer's actions to the competent regulator or to a court;</li>
+  <li data-l="en">object to processing and ask for it to stop.</li>
+</ul>
+
+<p data-l="ru">Практически всё это можно сделать самостоятельно: в Приложении видны и меняются профиль, цель и напоминания, отзыв разрешений делается в системных настройках, удаление — через удаление Приложения. Если нужен письменный ответ или остались вопросы, напишите на адрес из раздела 11.</p>
+<p data-l="en">In practice you can do almost all of this yourself: the App shows and edits your profile, goal and reminders; permissions are revoked in system settings; data is deleted by uninstalling the App. If you need a written answer or have remaining questions, write to the address in section 11.</p>
+
+<h2 id="security">
+  <span data-l="ru">9. Безопасность</span><span data-l="en">9. Security</span>
+</h2>
+
+<ul>
+  <li data-l="ru">У Приложения нет собственного сервера, поэтому отправлять данные о здоровье «куда-то» ему некуда. В Health Connect шаги попадают только через системный компонент Android и только если вы сами включили синхронизацию.</li>
+  <li data-l="ru">Локальная база данных защищена песочницей Приложения в Android: другие приложения не могут её прочитать.</li>
+  <li data-l="ru">Передача данных по сети там, где она всё же есть (реклама), выполняется по защищённым каналам силами рекламного SDK.</li>
+  <li data-l="ru">Мы не храним учётных данных и паролей, потому что в Приложении нет учётных записей.</li>
+  <li data-l="en">The App has no server of its own, so there is nowhere for it to send health data. Steps enter Health Connect only through the Android system component, and only if you enabled sync yourself.</li>
+  <li data-l="en">The local database is protected by the Android app sandbox: other apps cannot read it.</li>
+  <li data-l="en">Where network traffic does exist (ads), it is carried over secure channels by the advertising SDK.</li>
+  <li data-l="en">We store no credentials or passwords, because the App has no accounts.</li>
+</ul>
+
+<h2 id="children">
+  <span data-l="ru">10. Дети</span><span data-l="en">10. Children</span>
+</h2>
+
+<p data-l="ru">Приложение не предназначено для детей младше 14 лет и не собирает их данные осознанно. Если в регионе, где вы им пользуетесь, закон требует более высокого возраста для согласия на обработку данных, мы применяем этот, более высокий порог.</p>
+<p data-l="en">The App is not directed at children under 14 and does not knowingly collect their data. Where the law of the region you live in sets a higher age for consent to data processing, we apply that higher threshold.</p>
+
+<p data-l="ru">Реклама в Приложении не настраивается по возрасту: мы не решаем, кому показывать баннер. Отбор объявления и вся дальнейшая обработка рекламных данных — на стороне рекламной сети, по её правилам (раздел 4).</p>
+<p data-l="en">Advertising is not targeted by age: we do not decide who sees the banner. Ad selection and any further processing of advertising data are done by the ad network under its own rules (section 4).</p>
+
+<p data-l="ru">Возрастного ограничения при установке в Приложении нет: счётчик шагов — простое средство учёта активности, а не средство слежения, и поставить его можно на любое устройство. Поэтому здесь описано наше намерение, а не технический запрет. Если вы считаете, что ребёнок пользовался Приложением, напишите нам, и мы поможем удалить данные.</p>
+<p data-l="en">There is no in-app age gate: a step counter is a simple activity tracker, not a surveillance tool, and anyone can install it on an unlocked device. So this section states our intent, not a technical restriction. If you believe a child used the App, contact us and we will help delete the data.</p>
+
+<h2 id="changes">
+  <span data-l="ru">11. Изменения политики</span><span data-l="en">11. Changes to this policy</span>
+</h2>
+
+<p data-l="ru">Политика может обновляться: например, если изменится набор рекламных партнёров или появится новая функция, которая обращается к сети. Новая редакция публикуется по этому же адресу с новой датой вверху страницы. Если изменение существенно затрагивает обработку данных, мы сообщим об этом в Приложении или по электронной почте.</p>
+<p data-l="en">This policy may be updated: for example, if the set of advertising partners changes or a new feature starts using the network. The new version is published at this same address with a new date at the top. If a change materially affects data processing, we will notify you in the App or by email.</p>
+
+<h2 id="contacts">
+  <span data-l="ru">12. Контакты</span><span data-l="en">12. Contact</span>
+</h2>
+
+<p data-l="ru">Разработчик: Константин Петров (VBsoft), Новосибирск, Россия.<br>Электронная почта: <a href="mailto:petrovmailme@yandex.ru">petrovmailme@yandex.ru</a></p>
+<p data-l="en">Developer: Konstantin Petrov (VBsoft), Novosibirsk, Russia.<br>Email: <a href="mailto:petrovmailme@yandex.ru">petrovmailme@yandex.ru</a></p>
+
+<p data-l="ru">Пишите, если хотите узнать, какие данные обрабатываются, если нужно их удалить или если считаете, что Приложение нарушило ваши права. Отвечаем на обращения, связанные с персональными данными.</p>
+<p data-l="en">Write to us if you want to know what data is processed, if you need it deleted, or if you believe the App violated your rights. We respond to personal data requests.</p>
+
+<footer>
+  <p><span data-l="ru">Документ является публичной политикой конфиденциальности приложения «Шагомер» для Android и не требует входа, подписки или оплаты. Текст свободен для цитирования.</span><span data-l="en">This document is the public privacy policy of the "Pedometer" Android app. It requires no login, registration or payment. The text may be quoted freely.</span></p>
+</footer>
+
+</main>
+
+<script>
+  (function () {
+    var btn = document.getElementById('langToggle');
+    function label() {
+      btn.textContent = document.documentElement.lang === 'ru' ? 'English' : 'Русский';
+      btn.setAttribute('aria-label', document.documentElement.lang === 'ru'
+        ? 'Switch to English'
+        : 'Переключить на русский');
+    }
+    btn.addEventListener('click', function () {
+      var next = document.documentElement.lang === 'ru' ? 'en' : 'ru';
+      document.documentElement.lang = next;
+      try { localStorage.setItem('privacy-lang', next); } catch (e) {}
+      label();
+    });
+    label();
+  })();
+</script>
+</body>
+</html>
